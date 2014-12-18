@@ -3,12 +3,12 @@ __author__ = 'arkilic'
 
 import sys
 import six
-import getpass
 from metadataStore.database.utility import (
     validate_dict, validate_string, validate_time, validate_int, validate_list
 )
 from metadataStore.sessionManager.databaseInit import db
 from pymongo.errors import DuplicateKeyError
+
 
 class Header(object):
     """
