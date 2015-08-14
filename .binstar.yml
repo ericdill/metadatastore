@@ -34,20 +34,18 @@ engine:
 # or not, that is up to you
 #===============================================================================
 
-install:
-  - conda install binstar pip setuptools nose pyyaml six pytz numpy coverage
-  - conda install -c ericdill nslsii_dev_configuration mongoengine=0.8.7 humanize prettytable
-  - apt-get install mongo
-test:
-  - mkdir /home/binstar/mongo
-  - mongod --dbpath=/home/binstar/mongo
-  - conda info -e
-  - source activate /home/binstar/env
-  - conda list
-  - ls /home/binstar/env
-  - python setup.py develop
-
-  - python run_tests.py
+#install:
+#  - conda install binstar pip setuptools nose pyyaml six pytz numpy coverage
+#  - conda install -c edill nslsii_dev_configuration mongoengine=0.8.7 humanize prettytable
+#  - apt-get install mongo
+#test:
+#  - conda info -e
+#  - source activate /home/binstar/env
+#  - conda list
+#  - ls /home/binstar/env
+#  - python setup.py develop
+#
+#  - python run_tests.py
 ## Run before the script
 # before_script:
 #   - echo "before_script!"
@@ -56,8 +54,8 @@ script:
   - echo "This is my binstar build!"
   - conda build conda-recipe/
 ## This will run after the script regardless of the result of script
-## BINSTAR_BUILD_RESULT=[succcess|failure]
-# after_script:
+### BINSTAR_BUILD_RESULT=[succcess|failure]
+## after_script:
 #   - echo "The build was a $BINSTAR_BUILD_RESULT" | tee artifact1.txt
 ## This will be run only after a successful build
 # after_success:
