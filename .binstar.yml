@@ -37,7 +37,10 @@ engine:
 install:
   - conda install binstar pip setuptools nose pyyaml six pytz numpy coverage
   - conda install -c ericdill nslsii_dev_configuration mongoengine=0.8.7 humanize prettytable
+  - apt-get install mongo
 test:
+  - mkdir /home/binstar/mongo
+  - mongod --dbpath=/home/binstar/mongo
   - conda info -e
   - source activate /home/binstar/env
   - conda list
