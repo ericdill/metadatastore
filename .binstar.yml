@@ -35,8 +35,8 @@ engine:
 #===============================================================================
 
 install:
-  - conda install binstar pip setuptools nose pyyaml six mongoengine=0.8.7
-  - conda install -c ericdill nslsii_dev_configuration
+  - conda install binstar pip setuptools nose pyyaml six
+  - conda install -c ericdill nslsii_dev_configuration mongoengine=0.8.7
   - pip install coverage
 test:
   - conda info -e
