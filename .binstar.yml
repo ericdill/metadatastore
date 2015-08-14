@@ -36,7 +36,7 @@ engine:
 
 install:
 #  - conda install binstar pip setuptools nose pyyaml six pytz numpy coverage
-  - conda install -c edill nslsii_dev_configuration
+  - conda install -c ericdill nslsii_dev_configuration
 #  - apt-get install mongo
 #test:
 #  - conda info -e
