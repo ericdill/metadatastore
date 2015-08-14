@@ -39,6 +39,7 @@ install:
   - conda install -c ericdill nslsii_dev_configuration
   - pip install coverage
 test:
+  - conda info -e
   - python setup.py develop
   - python run_tests.py
 ## Run before the script
