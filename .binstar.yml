@@ -35,7 +35,8 @@ engine:
 #===============================================================================
 
 install:
-  - conda install binstar pip setuptools nose pyyaml nslsii_dev_environment
+  - conda install binstar pip setuptools nose pyyaml
+  - conda install -c ericdill nslsii_dev_environment
   - pip install coverage
 test:
   - python setup.py develop
