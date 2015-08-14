@@ -78,4 +78,6 @@ script:
 ## upload conda builds
 ## e.g. conda is an alias for /opt/anaconda/conda-bld/<os-arch>/*.tar.bz2
 build_targets:
- - conda
+  files: conda
+  channels: main
+  channel: main
