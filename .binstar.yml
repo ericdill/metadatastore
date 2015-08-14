@@ -34,9 +34,9 @@ engine:
 # or not, that is up to you
 #===============================================================================
 
-#install:
+install:
 #  - conda install binstar pip setuptools nose pyyaml six pytz numpy coverage
-#  - conda install -c edill nslsii_dev_configuration mongoengine=0.8.7 humanize prettytable
+  - conda install -c edill nslsii_dev_configuration
 #  - apt-get install mongo
 #test:
 #  - conda info -e
