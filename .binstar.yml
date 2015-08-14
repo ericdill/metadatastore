@@ -6,7 +6,7 @@ package: metadatastore
 ## You can also specify the account to upload to,
 ## you must be an admin of that account, this
 ## defaults to your user account
-# user: USERNAME
+user: lightsource2
 
 #===============================================================================
 # Build Matrix Options
@@ -36,7 +36,8 @@ engine:
 
 install:
 #  - conda install binstar pip setuptools nose pyyaml six pytz numpy coverage
-  - conda install -c ericdill nslsii_dev_configuration
+  - conda config --add channels lightsource2
+  - conda install nslsii_dev_configuration
 #  - apt-get install mongo
 #test:
 #  - conda info -e
