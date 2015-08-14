@@ -34,7 +34,7 @@ engine:
 # or not, that is up to you
 #===============================================================================
 
-install:
+#install:
 #  - conda install binstar pip setuptools nose pyyaml six pytz numpy coverage
 #  - apt-get install mongo
 #test:
