@@ -40,7 +40,9 @@ install:
   - pip install coverage
 test:
   - conda info -e
+  - source activate /home/binstar/env
   - python setup.py develop
+
   - python run_tests.py
 ## Run before the script
 # before_script:
