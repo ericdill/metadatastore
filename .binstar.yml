@@ -50,8 +50,7 @@ engine:
 #   - echo "before_script!"
 ## Put your main computations here!
 script:
-  - echo "This is my binstar build!"
-#  - conda config --add channels lightsource2
+  - conda config --add channels lightsource2
 #  - conda install nslsii_dev_configuration
   - conda build conda-recipe/
 ## This will run after the script regardless of the result of script
