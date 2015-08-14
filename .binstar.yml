@@ -41,6 +41,7 @@ test:
   - conda info -e
   - source activate /home/binstar/env
   - conda list
+  - ls /home/binstar/env
   - python setup.py develop
 
   - python run_tests.py
