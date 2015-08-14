@@ -51,8 +51,8 @@ engine:
 ## Put your main computations here!
 script:
   - echo "This is my binstar build!"
-  - conda config --add channels lightsource2
-  - conda install nslsii_dev_configuration
+#  - conda config --add channels lightsource2
+#  - conda install nslsii_dev_configuration
   - conda build conda-recipe/
 ## This will run after the script regardless of the result of script
 ### BINSTAR_BUILD_RESULT=[succcess|failure]
@@ -78,6 +78,4 @@ script:
 ## upload conda builds
 ## e.g. conda is an alias for /opt/anaconda/conda-bld/<os-arch>/*.tar.bz2
 build_targets:
-  channels:
-    - main
   files: conda
