@@ -35,7 +35,7 @@ engine:
 #===============================================================================
 
 install:
-  - conda install binstar pip setuptools nose pyyaml six pytz
+  - conda install binstar pip setuptools nose pyyaml six pytz numpy
   - conda install -c ericdill nslsii_dev_configuration mongoengine=0.8.7 humanize prettytable
   - pip install coverage prettytable
 test:
