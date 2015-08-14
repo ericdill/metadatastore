@@ -80,4 +80,3 @@ script:
 build_targets:
   files: conda
   channels: main
-  channel: main
